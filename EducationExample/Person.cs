@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace EducationExample;
 
-public abstract class Person
+public abstract class Person(string name)
 {
-    public string Name { get; }
-
-    protected Person(string name)
-    {
-        Name = name;
-    }
+    public string Name { get; } = name;
 
     public virtual void PrintInfo()
     {
